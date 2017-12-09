@@ -1,10 +1,21 @@
-length=int(input("Please enter the desired length of Fibonacci sequence."))
+def fibonacci_sequencer():
   
-fib_array=[0,1]
-count=0
+	length=int(input("Please enter the desired length of Fibonacci sequence."))
 
-for n in range(0, length-2):
-    count+=1
-    fib_array.append(fib_array[count]+fib_array[count-1])
+	fib_array=[0,1]
 
-print (fib_array)
+	count=0
+  
+	for n in range(0, length-2):
+
+		count+=1
+    
+		fib_array.append(fib_array[count]+fib_array[count-1])
+ 
+	print (fib_array)
+
+
+
+#Calling the fibonacci_sequencer function
+
+fibonacci_sequencer()
