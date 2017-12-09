@@ -1,17 +1,16 @@
 def fibonacci_sequencer():
-  
-	length=int(input("Please enter the desired length of Fibonacci sequence."))
 
+	length=int(input("Please enter the desired length of Fibonacci sequence."))
 	fib_array=[0,1]
 
 	count=0
-  
+
 	for n in range(0, length-2):
 
 		count+=1
-    
+
 		fib_array.append(fib_array[count]+fib_array[count-1])
- 
+
 	print (fib_array)
 
 
