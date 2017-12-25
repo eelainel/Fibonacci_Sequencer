@@ -1,20 +1,25 @@
 def fibonacci_sequencer():
 
-	length=int(input("Please enter the desired length of Fibonacci sequence."))
-	fib_array=[0,1]
 
-	count=0
+	
+	while True:
+		length=int(input("Please enter the desired length of Fibonacci sequence."))
 
-	for n in range(0, length-2):
+		if length>0:
+			print("Generating Fibonacci sequence now...")
+			fib_array=[0,1]
+			count=0
+			for n in range(0, length-2):
+		    		count+=1
 
-		count+=1
+		    		fib_array.append(fib_array[count]+fib_array[count-1])
 
-		fib_array.append(fib_array[count]+fib_array[count-1])
-
-	print (fib_array)
+		    	print (fib_array)
+		    	break
 
 
 
 #Calling the fibonacci_sequencer function
+
 
 fibonacci_sequencer()
